@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mohan mantra</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reggae+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="app.js" defer></script>
+	<script src="rain.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+<!-- --------------------------------------------------------------------------- -->
+ <!-- login section starts -->
+ <div id="overlay" class="hidden">
+    <div class="modal">
+        <button id="close-modal-btn">&times;</button>
+
+        <div id="form-container" class="form login-form">
+            <h2 class="log_head">Login</h2>
+            <form action="auth.php" method="post">
+                <label for="login-email">Email</label>
+                <input id="login-email" type="email" name="login-email" placeholder="Enter your email" required>
+                <label for="login-password">Password</label>
+                <input id="login-password" type="password" name="login-password" placeholder="Enter your password" required>
+                <button class="action-btn btn" name="login">Login</button>
+                <p class="no-acc">
+                    Don't have an account? 
+                    <a href="#" id="switch-to-signup">Create Account</a>
+                </p>
+            </form>
+        </div>
+
+        <div id="signup-container" class="form hidden">
+            <h2 class="log_head">Sign Up</h2>
+            <form action="auth.php" method="post">
+                <label for="signup-username">Full Name</label>
+                <input id="signup-name" type="text" name="signup-username" placeholder="Enter your Full Name" required>
+                <label for="signup-username">Username</label>
+                <input id="signup-username" type="text" name="signup-username" placeholder="Enter your username" required>
+                <label for="signup-email">Email</label>
+                <input id="signup-emain" type="email" name="signup-email" placeholder="Enter your email" required>
+                <label for="signup-password">Password</label>
+                <input id="signup-password" type="password" name="signup-password" placeholder="Enter your password" required>
+                <button class="action-btn btn" name="signup">Sign Up</button>
+                <p class="no-acc">
+                    Already have an account? 
+                    <a href="#" id="switch-to-login">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- login section starts -->
+<!-- --------------------------------------------------------------------------- -->
+
+
+
+    <!-- headerr -->
+
+    <header class="header">
+        <!-- <a href="#" class="logo"><i class="fas fa-magic"></i>Mantra</a> -->
+    <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Hub</a></li>
+                <li><a href="rj/login.html">Events</a></li>
+                <li><a href="sponsers/index.html">Sponsors</a></li>
+                <li><a href="#d5">FAQ</a></li>
+
+            </ul>
+        </nav>
+
+     </header>
+
+    <!-- headerr -->
+
+
+
+
+<div id="d1">
+
+    <!-- <div class="logo" style="background-image: url(img/logo.svg);"></div> -->
+
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1">
+				<video autoplay muted playsinline class="background-video" id="videoPlayer">
+					<source src="images/hii_1920x1056.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="layers__item layer-2" style="background-image: url(img/layer.png);"></div>
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					<!-- <h1>Natural Forest <span>HTML / CSS</span></h1> -->
+					<!-- <div class="hero-content__p">Creating a beautiful 3D website with a ‘lens effect’</div> -->
+					<button class="button-start" id="open-modal-btn">Get Set Go</button>
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<!-- <canvas class="rain"></canvas> -->
+			</div>
+			<!-- <div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+			<div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div> -->
+		</div>
+	</section>
+
+</div>
+
+<div class="overover">
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+<!-- schedule -->
+<header>
+    <div class="head_">
+      <h1>SCHEDULE</h1>
+    </div>
+  </header>
+
+  <div class="tabs_">
+    <div class="tab_" onclick="showDay('day1')">
+      Day <span class="day-number_ day1-color">01</span>
+      <div class="date_">Feb 15, 2025</div>
+    </div>
+    <div class="tab_" onclick="showDay('day2')">
+      Day <span class="day-number_ day2-color">02</span>
+      <div class="date_">Feb 16, 2025</div>
+    </div>
+  </div>
+
+  <div id="day1" class="content_ event_">
+    <img src="images/Leonardo_Anime_XL_A_highenergy_music_band_electrifies_the_stag_0.jpg" alt="Event 1">
+  </div>
+
+  <div id="day2" class="content_ event_">
+    <!-- <div class="event_"> -->
+      <img src="images/Leonardo_Anime_XL_A_legendary_DJ_stands_at_the_center_of_a_cos_2.jpg" alt="Event 2">
+    <!-- </div> -->
+  </div>
+
+<!-- schedule -->
+<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- getthere -->
+<div class="get-there">
+        
+    <div class="heading-gt"><h1 class="place">Guide to Glory..</h1></div>
+    <div class="l2">
+        <!-- <div class="a2"> -->
+            <div class="a22 card">
+                <img src="images/high-speed-transport-abstract-concept-illustration.png" alt="Route">
+                <h1>By Train</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae.</p>
+            </div>
+            <div class="a22 card">
+                <img src="images/freepik-professional-duotone-travel-agency-logo-202502141354364xSK.png" alt="Route">
+                <h1>By Car</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae.</p>
+            </div>
+            <div class="a22 card">
+                <img src="images/car-company-logo-template.png" alt="Route">
+                <h1>By Flight</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae.</p>
+            </div>
+        <!-- </div> -->
+    </div>
+    <!-- <div class="heading-gt"><h1>Getting There..</h1></div>
+    <div class="l2">
+        <div class="a2"> -->
+            <!-- <div class="a22">
+                <img src="images/high-speed-transport-abstract-concept-illustration.png" alt="Route">
+                <h1>Step-1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae, officiis vel reprehenderit? Cumque, facere nesciunt officiis quibusdam cupiditate nihil vel?</p>
+            </div>
+            <div class="a22">
+                <img src="images/freepik-professional-duotone-travel-agency-logo-202502141354364xSK.png" alt="Route">
+                <h1>Step-2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae, officiis vel reprehenderit? Cumque, facere nesciunt officiis quibusdam cupiditate nihil vel?</p>
+            </div>
+            <div class="a22">
+                <img src="images/car-company-logo-template.png" alt="Route">
+                <h1>Step-3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt voluptatibus praesentium temporibus accusamus nesciunt quisquam unde molestias, repudiandae, officiis vel reprehenderit? Cumque, facere nesciunt officiis quibusdam cupiditate nihil vel?</p>
+            </div> -->
+        <!-- </div> -->
+
+</div>
+
+<!-- getthere -->
+<!-- -------------------------------------------------- -->
+
+<!-- contactus -->
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<!-- footerr -->
+<div id="d5">
+<section id="faq" class="faq">
+    <h1 class="place fa_head">FAQ</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <video autoplay loop muted playsinline>
+                <source src="faq.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How will I be notified if there are any changes to the event?</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>We'll notify you of event changes via email, so ensure your email address is up-to-date in your account settings.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>What kind of content can I expect to find?
+                    </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>You can enjoy the events and exiting Dj nights.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How do I get a refund?
+                    </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Contact our customer support team via email or phone to request a refund, and review our refund policy for eligibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>Where can I purchase the pass for the event?
+                    </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Buy event passes on our event website by clicking "Register" and completing the payment process.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>How do I create an account?
+                    </h3>
+                </div>
+                <div class="accordion-body">
+                    <p>Click "Sign Up" on our website, fill out the registration form, and verify your email address.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</div>
+
+
+</div>
+
+<!-- FAQ section ends -->
+<!-- -------------------------------------------------- -->
+ 
+
+
+<section class="footer">
+    <video autoplay muted loop class="backgroundu">
+        <source src="po_1280x704.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1></h1>
+
+   
+</section>
+
+
+<!-- footerr -->
+
+</body>
+</html>
