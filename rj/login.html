@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohana Mantra 2K25</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Eater&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon"  type="image/x-icon" href="images/PARTY-removebg-preview.png">
+</head>
+<body>
+    <script src="login.js"></script>
+
+
+
+
+<!-- regis -->
+<div class="overlay_r" id="overlay_r">
+    <div class="box_r">
+        <div class="form_r">
+            <h2>Registration</h2>
+            <div class="scroll-container_r">
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" required="required" placeholder="Name">
+                </div>
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <select required="required">
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male" style="color: black;">Male</option>
+                        <option value="female" style="color: black;">Female</option>
+                        <option value="other" style="color: black;">Other</option>
+                    </select>
+                </div>
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" required="required" placeholder="Mobile number">
+                </div>
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" required="required" placeholder="Email">
+                </div>
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <select required="required">
+                        <option value="" disabled selected>Local/Non-local</option>
+                        <option value="local" style="color: black;">Local</option>
+                        <option value="non-local" style="color: black;">Non-Local</option>
+                    </select>
+                </div>
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" required="required" placeholder="Place">
+                </div>
+                <div class="inputBox_r">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <input type="number" required="required" placeholder="Amount">
+                </div>
+            </div>
+            <input type="submit" value="Register" class="regester_now">
+            <button class="close-form-btn" onclick="closeForm()">Close Form</button>
+        </div>
+    </div>
+</div>
+
+<!-- regis -->
+
+
+
+
+
+
+
+
+    <header class="header">
+        <section class="flex">
+            <a href="#" class="logo"><img src="images/PARTY-removebg-preview.png" alt="Logo"></a>
+            <nav class="navbar">
+                <a href="../index.html">Hub</a>
+                <a href="#morning_events">Morning Events</a>
+                <a href="#Tickets">Tickets</a>
+                <a href="#Hosts">Hosts</a>
+                <div class="profile-menu">
+                    <i class="fas fa-user-circle profile-pic"></i>
+                    <div class="dropdown">
+                        <p>User</p>
+                        <button class="logout">Logout</button>
+                    </div>
+                </div>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+        </section>
+    </header>
+    
+    <div class="home" id="home">
+        <section class="content">
+            <p>03 october 2025</p>
+            <h3>Mohana mantra 2025</h3>
+            <a href="#" class="btn" onclick="openForm()">let's go</a>
+        </section>
+    </div>
+    
+    <div class="info-container" id="morning_events">
+        <section>
+            <div class="title">
+                <span>Moments of Fun</span>
+                <h3>Morning Events</h3>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/KALA.jpg">
+                    <h3>Kalakshethra</h3>
+                </div>
+                <div class="box">
+                    <img src="images/RAMP.jpg" >
+                    <h3>Ramp walk</h3>
+                </div>
+                <div class="box">
+                    <img src="images/hackerthon.jpg" >
+                    <h3>Technoholic</h3>
+                </div>
+                <div class="box">
+                    <img src="images/WORKSHOPP.jpg">
+                    <h3>Workshops</h3>
+                </div>
+                <!-- <div class="box">
+                    <img src="./eventsss-removebg-preview.png" >
+                    <h3>Events</h3>
+                </div>
+                <div class="box">
+                    <img src="./game-removebg-preview.png" >
+                    <h3>Games</h3>
+                </div> -->
+            </div>
+        </section>
+    </div>
+    
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="images/About.jpg">
+            </div>
+            <div class="content">
+                <span>About the party</span>
+                <h3>Trick or Treak?</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae quos beatae sequi. Consequatur temporibus atque laborum quisquam eveniet minima!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="events">
+        <div class="title">
+            <span>Evening events</span>
+            <h3>Special Program</h3>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="HHH">
+                    <video width="300" height="300" autoplay loop muted style="opacity: 0.79;">
+                        <source src="images/Music band.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3 style="color: white;">Music Night</h3>
+                    <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde dolorem ratione consequuntur, doloribus, accusantium provident dolor placeat praesentium quo fuga laudantium facere error officia inventore vel sit iste porro.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="HHH">
+                    <video width="300" height="300" autoplay loop muted style="opacity: 0.79;">
+                        <source src="images/Djj.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3 style="color: white;">Dj night</h3>
+                    <p style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum labore et perferendis, similique ipsam eos mollitia nostrum voluptatum incidunt provident vero quidem ducimus saepe quo, sunt modi enim sed. Qui!</p>
+                </div>
+            </div>
+            <!-- <div class="box">
+                <img src="./vampire-removebg-preview.png">
+                <h3>Vampire's ball</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime!</p>
+            </div> -->
+            <!-- <div class="box">
+                <img src="./crafts.png">
+                <h3>Halloween crafts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime!</p>
+            </div>
+            <div class="box">
+                <img src="./witch_dance-removebg-preview.png">
+                <h3>witch dance party</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime!</p>
+            </div>
+            <div class="box">
+                <img src="./Jack-O__-Lantern_pinata-removebg-preview.png">
+                <h3>Jack-O' -Lantern pinata</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime!</p>
+            </div>
+            <div class="box">
+                <img src="./halloween_party-removebg-preview.png">
+                <h3>Halloween party</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime!</p>
+            </div> -->
+        </div>
+    </section>
+    
+    <div class="countdown" style="background-color:#2F3D4E;">
+        <section>
+            <div class="title">
+                <span>Hurry up!</span>
+                <h3>Time to party</h3>
+            </div>
+    
+            <!-- <div class="image">
+                <img src="./cloud.jpg">
+            </div> -->
+    
+            <div class="counter">
+                <div class="box">
+                    <h3 id="day">00</h3>
+                    <span>day</span>
+                </div>
+                <div class="box">
+                    <h3 id="hour">00</h3>
+                    <span>hour</span>
+                </div>
+                <div class="box">
+                    <h3 id="minute">00</h3>
+                    <span>minute</span>
+                </div>
+                <div class="box">
+                    <h3 id="second">00</h3>
+                    <span>second</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="tickets" id="Tickets">
+        <section>
+            <div class="title">
+                <span> get it now</span>
+                <h3>your tickets</h3>
+            </div>
+            <div class = "box-container">
+                <div class="box">
+                    <h3>Kalakshethra</h3>
+                    <div class="price"><span>₹</span>10</div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nihil repellendus accusantium autem quibusdam ipsum!</p>
+                    <a href="#" class="btn">get in now</a>
+                </div>
+                <div class="box">
+                    <h3>Ramp Walk</h3>
+                    <div class="price"><span>₹</span>20</div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nihil repellendus accusantium autem quibusdam ipsum!</p>
+                    <a href="#" class="btn">get in now</a>
+                </div>
+                <div class="box">
+                    <h3>Night Events</h3>
+                    <div class="price"><span>₹</span>30</div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nihil repellendus accusantium autem quibusdam ipsum!</p>
+                    <a href="#" class="btn">get in now</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="team" id="Hosts">
+        <div class="title">
+            <span>Celebration Crew</span>
+            <h3>Party Hosts</h3>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/hostt.png" alt="">
+                </div>
+                <!-- <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div> -->
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>ourparty host</span>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/HOST-removebg-preview.png" alt="">
+                    </div>
+                    <!-- <div class="share">
+                        <a href="#" class="fab fa-whatsapp"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div> -->
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>ourparty host</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/HOST33-removebg-preview.png" alt="">
+                    </div>
+                    <!-- <div class="share">
+                        <a href="#" class="fab fa-whatsapp"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div> -->
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>ourparty host</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section class="contact" id="contact">
+        <div class="title">
+            <span>join us</span>
+            <h3>for scary fun</h3>
+        </div>
+        <div class="row">
+            <div class="content">
+                <h3>When and where</h3>
+                <p>new park, andheri west, mumbai, india 517 501</p>
+                <p><a href="1234567890">+123-456-7890</a></p>
+                <p><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+                <p>31st October 2025 @ 8:00 pm</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="your name" maxlength="30" class="input">
+                <input type="number" placeholder="your number" maxlength="10" class="input">
+                <input type="email" placeholder="your email" maxlength="50" class="input">
+                <textarea class="input" placeholder="your message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </div>    
+    </section> -->
+    
+    <footer class="footer">
+        <section>
+            <div class="share">
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="credit">created by <span>MM2K25 web designers</span></div>
+            <!-- <div class="credit">created by <span>MM2K25 web designers</span> | all rights reserved!</div> -->
+        </section>
+        <!-- <div class="image">
+            <img src="./halloween-pumpkin-wallpaper-1-removebg-preview.png">
+        </div> -->
+    </footer>
+</body>
+</html>
